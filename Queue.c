@@ -2,7 +2,19 @@
 
 void enqueue(Queue* q, Node* n);
 Node* dequeue(Queue* q);
+Queue* initQueue();
 
+
+Queue* initQueue()
+{
+    Queue* q = (Queue*)malloc(sizeof(Queue));
+    q->head = NULL;
+    q->tail = NULL;
+    q->size = 0;
+    q->p = 0;
+    
+    return q;
+}
 
 void enqueue(Queue* q, Node* n)
 {
