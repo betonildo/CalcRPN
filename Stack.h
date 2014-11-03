@@ -24,7 +24,7 @@ extern "C" {
     extern void push(Stack* stk, Node* n);
     extern Node* top(Stack* stk);
     extern int empty(Stack* stk);
-    extern void makeNull(Queue* stk);
+    extern void makeNull(Stack* stk);
     extern Stack* initStack(int size);
 
 

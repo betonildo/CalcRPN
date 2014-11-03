@@ -4,7 +4,7 @@ void pop(Stack* stk);
 void push(Stack* stk, Node* n);
 Node* top(Stack* stk);
 int empty(Stack* stk);
-void makeNull(Queue* stk);
+void makeNull(Stack* stk);
 Stack* initStack(int size);
 
 
@@ -28,6 +28,9 @@ void pop(Stack* stk)
         return;
 }
 
+/*
+ * Push a value to stack stk as node n.
+ */
 void push(Stack* stk, Node* n)
 {
     //Desviar de possíveis problemas
@@ -65,7 +68,7 @@ int empty(Stack* stk)
 }
 
 
-void makeNull(Queue* stk)
+void makeNull(Stack* stk)
 {
     while(top(stk) != NULL)
     {

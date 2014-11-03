@@ -24,6 +24,7 @@ extern "C" {
         int p;
     };
     
+    extern Queue* initQueue();
     extern void enqueue(Queue* q, Node* n);
     extern Node* dequeue(Queue* q);
     //extern

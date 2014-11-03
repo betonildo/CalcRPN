@@ -4,4 +4,16 @@
         <activeConfTypeElem>1</activeConfTypeElem>
         <activeConfIndexElem>0</activeConfIndexElem>
     </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Node.h</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Queue.h</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Node.c</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Stack.c</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Queue.c</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/main.c</file>
+            <file>file:/home/gilberto/NetBeansProjects/CalcRPN/Stack.h</file>
+        </group>
+    </open-files>
 </project-private>

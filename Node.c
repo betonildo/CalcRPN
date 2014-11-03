@@ -1,15 +1,15 @@
 #include "Node.h"
 
-Node* initNode();
+Node* initNode(int d);
 Node* getNext(Node* n);
 Node* getPrev(Node* n);
-void setNodeValue(Node* n, void* content);
-void* getNodeValue(Node* n);
+void setNodeValue(Node* n, int content);
+int getNodeValue(Node* n);
 
-Node* initNode()
+Node* initNode( int d)
 {
     Node* tmp = (Node*)malloc(sizeof(Node));
-    tmp->el = NULL;
+    tmp->el = d;
     tmp->next = NULL;
     tmp->prev = NULL;
     
@@ -27,12 +27,12 @@ Node* getPrev(Node* n)
     return (n != NULL) ? n->prev : NULL;
 }
 
-void setNodeValue(Node* n, void* content)
+void setNodeValue(Node* n, int content)
 {
     n->el = content;
 }
 
-void* getNodeValue(Node* n)
+int getNodeValue(Node* n)
 {
     return n->el;
 }

@@ -17,20 +17,19 @@
 extern "C" {
 #endif
     
-
     typedef struct Node Node;
     
     struct Node{
-        void* el;
+        int el;
         Node* next;
         Node* prev;
     };
 
-    extern Node* initNode();
+    extern Node* initNode(int d);
     extern Node* getNext(Node* n);
     extern Node* getPrev(Node* n);
-    extern void setNodeValue(Node* n, void* content);
-    extern void* getNodeValue(Node* n);
+    extern void setNodeValue(Node* n, int content);
+    extern int getNodeValue(Node* n);
 
 #ifdef	__cplusplus
 }

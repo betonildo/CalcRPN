@@ -18,9 +18,21 @@ Queue* initQueue()
 
 void enqueue(Queue* q, Node* n)
 {
-    if(q == NULL || q->tail == NULL || n == NULL) return;
-    q->tail->next = n;
-    n->prev = q->tail;
+    if(q == NULL || n == NULL) return;
+    
+    if (q->tail == NULL && q->head == NULL)
+    {
+        q->tail = n;
+        q->head = n;
+    }
+    else
+    {
+        q->tail->next = n;
+        n->prev = q->tail;
+        q->tail = q->tail->next;
+    }
+    
+    q->size++;
     
 }
 
@@ -28,9 +40,17 @@ Node* dequeue(Queue* q)
 {
     if (q == NULL || q->head == NULL) return;
     Node* tmpn = q->head;
-    tmpn->next = NULL;
-    tmpn->prev = NULL;
-    q->head = q->head->next;
-    q->head->prev = NULL;
+    if (q->head->next == NULL)
+    {
+        q->head = NULL;
+        q->tail = NULL;
+    }
+    else
+    {
+        q->head = q->head->next;
+        q->head->prev = NULL;        
+    }
+
+    q->size--;
     return tmpn;
 }
